@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		app:icon="@drawable/search_settings_icon"
+		app:title="@string/search_settings" >
+
+		<ListPreference
+			app:key="order_by"
+			app:defaultValue="time"
+			app:entries="@array/sorted_entries"
+			app:entryValues="@array/sorted_values"
+			app:title="@string/order_by"
+			app:useSimpleSummaryProvider="true" />
+
+		<EditTextPreference
+			app:key="earthquake_limit"
+			app:defaultValue="20"
+			app:title="@string/earthquake_limit"
+			android:inputType="numberDecimal"
+			app:useSimpleSummaryProvider="true" />
+
+		<SeekBarPreference
+			app:key="min_mag"
+			app:defaultValue="3"
+			app:title="@string/min_mag"
+			android:max="10"
+			app:useSimpleSummaryProvider="true"
+			app:showSeekBarValue="true" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/item"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="?attr/selectableItemBackground"
+	android:orientation="horizontal"
+	android:paddingTop="15dp"
+	android:paddingBottom="15dp">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="60dp"
+		android:layout_height="46dp"
+		android:paddingStart="0dp"
+		android:paddingEnd="5dp">
+
+
+		<ImageView
+			android:id="@+id/circle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/app_name"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/mag_circle"
+			tools:ignore="ImageContrastCheck" />
+
+		<TextView
+			android:id="@+id/magnitude"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/_10_0"
+			android:textColor="@color/white"
+			android:textSize="17sp"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="@+id/circle"
+			app:layout_constraintEnd_toEndOf="@+id/circle"
+			app:layout_constraintStart_toStartOf="@+id/circle"
+			app:layout_constraintTop_toTopOf="@+id/circle"
+			tools:ignore="TextContrastCheck" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<LinearLayout
+		android:id="@+id/dirAndPlace"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/direction"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text="@string/_27km_sse_of"
+			android:textColor="@color/textColorEarthquakeDetails"
+			android:textSize="14sp"
+			tools:ignore="TextContrastCheck" />
+
+		<TextView
+			android:id="@+id/place"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="sans-serif-light"
+			android:gravity="center_vertical"
+			android:text="@string/dehradun_india"
+			android:textColor="@color/textColorEarthquakeLocation"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/dateAndTime"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/date"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:gravity="center_vertical|end"
+			android:text="@string/june_26_2021"
+			android:textColor="@color/textColorEarthquakeDetails"
+			tools:ignore="TextContrastCheck" />
+
+		<TextView
+			android:id="@+id/time"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="0dp"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:gravity="center_vertical|end"
+			android:text="@string/_13_56"
+			android:textColor="@color/textColorEarthquakeDetails"
+			tools:ignore="TextContrastCheck" />
+
+	</LinearLayout>
+
+</LinearLayout>

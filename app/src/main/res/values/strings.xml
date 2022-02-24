@@ -1,0 +1,22 @@
+<resources>
+	<!-- Other Strings-->
+	<string name="app_name">Earthquakes</string>
+	<string name="june_26_2021">June 26, 2021</string>
+	<string name="_13_56">13:56</string>
+	<string name="_27km_sse_of">27km SSE of</string>
+	<string name="dehradun_india">Dehradun, India</string>
+	<string name="_10_0">9.9</string>
+	<string name="fetching_earthquakes">Fetching Earthquakes…</string>
+	<string name="no_earthquakes_found">No earthquakes found!</string>
+	<string name="empty_doggo">empty doggo</string>
+	<string name="settings_button">Settings</string>
+	<string name="title_activity_settings">SettingsActivity</string>
+
+	<!-- Preference Titles -->
+	<string name="search_settings">Search Settings</string>
+
+	<!-- Messages Preferences -->
+	<string name="min_mag">Minimum Magnitude</string>
+	<string name="earthquake_limit">Earthquake Limit</string>
+	<string name="order_by">Order By</string>
+</resources>
