@@ -7,11 +7,13 @@
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/drawable/search_settings_icon.xml" value="0.2265" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/drawable/settings.xml" value="0.2265" />
+        <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/drawable/toast_background.xml" value="0.2265" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/layout/activity_empty.xml" value="0.2375" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/layout/progress_dialog_layout.xml" value="0.25" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/layout/recycler_view_item_layout.xml" value="0.25" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/layout/settings_activity.xml" value="0.25" />
+        <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/layout/toast_layout.xml" value="0.25" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/menu/action_bar_menu.xml" value="0.25" />
         <entry key="..\:/programming_work/AndroidStudioProjects/Earthquakes/app/src/main/res/xml/root_preferences.xml" value="0.264" />
       </map>

@@ -19,4 +19,6 @@
 	<string name="min_mag">Minimum Magnitude</string>
 	<string name="earthquake_limit">Earthquake Limit</string>
 	<string name="order_by">Order By</string>
+	<string name="calendar_button">Calendar</string>
+	<string name="this_is_a_custom_toast">This is a Custom Toast</string>
 </resources>

@@ -24,7 +24,6 @@ import java.util.Scanner;
 
 public class ExtractEarthquakes {
 
-	String jsonResponse;
 	private ArrayList<Earthquake> earthquakes;
 	private final SharedPreferences defaultSp;
 
@@ -34,7 +33,7 @@ public class ExtractEarthquakes {
 
 	public ArrayList<Earthquake> init() {
 
-		jsonResponse = getJsonResponse();
+		String jsonResponse = getJsonResponse();
 		earthquakes = new ArrayList<>();
 
 		try {
@@ -149,14 +148,16 @@ public class ExtractEarthquakes {
 		Uri baseUri = Uri.parse(baseUrl);
 		Uri.Builder uriBuilder = baseUri.buildUpon();
 
-		String order_by, earthquake_limit, min_mag;
-		order_by = defaultSp.getString("order_by", "time");
-		earthquake_limit = defaultSp.getString("earthquake_limit", "20");
+		String order_by, earthquake_limit, min_mag, starttime, endtime;
+		starttime = defaultSp.getString("starttime", "2022-01-01");
+		endtime = defaultSp.getString("endtime", "2022-02-01");
 		min_mag = String.valueOf(defaultSp.getInt("min_mag" , 3));
+		earthquake_limit = defaultSp.getString("earthquake_limit", "20");
+		order_by = defaultSp.getString("order_by", "time");
 
 		uriBuilder.appendQueryParameter("format", "geojson");
-		uriBuilder.appendQueryParameter("starttime", "2022-01-01");
-		uriBuilder.appendQueryParameter("endtime", "2022-02-01");
+		uriBuilder.appendQueryParameter("starttime", starttime);
+		uriBuilder.appendQueryParameter("endtime", endtime);
 		uriBuilder.appendQueryParameter("minmagnitude", min_mag);
 		uriBuilder.appendQueryParameter("maxmagnitude", "11");
 		uriBuilder.appendQueryParameter("limit", earthquake_limit);

@@ -3,10 +3,19 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	tools:context="com.samarthya.settingsdemo.MainActivity">
+
+	<item
+		android:id="@+id/action_calendar"
+		android:title="@string/calendar_button"
+		android:icon="@drawable/calendar"
+		android:orderInCategory="1"
+		app:showAsAction="ifRoom" />
+
 	<item
 		android:id="@+id/action_settings"
 		android:title="@string/settings_button"
 		android:icon="@drawable/settings"
-		android:orderInCategory="1"
+		android:orderInCategory="2"
 		app:showAsAction="ifRoom" />
+
 </menu>
