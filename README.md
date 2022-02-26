@@ -7,7 +7,7 @@
 
 ### **Tools Used:-**
 
-*	_Android Studio_ is the official IDE for android development. Our application was also built on the Android Stuidio IDE.
+*	_Android Studio_ is the official IDE for android development. Our application was also built on the Android Studio IDE.
 
 *	_Java_ is a very powerful OOP language, which is used for the backend development of our application.
     
